@@ -66,7 +66,7 @@ if __name__ == '__main__':
     print(half_column[0].find_all("a","card-footer-item")[1].get('href'))
     half_column_dict = [get_text(hc,col_elem_map) for hc in half_column]
     df_jobs = pd.DataFrame(half_column_dict)
-    # df_jobs.to_csv("check_scrape.csv")
+    df_jobs.to_csv("scrape_test.csv")
     print(df_jobs.head())
 
 
